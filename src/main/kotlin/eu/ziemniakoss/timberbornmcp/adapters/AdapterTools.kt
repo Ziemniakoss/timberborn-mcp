@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 import org.springframework.web.client.RestClient
 
 @Service
-class Tools(val boberApiService: BoberApiService, val restClient: RestClient) {
+class AdapterTools(val boberApiService: BoberApiService, val restClient: RestClient) {
     @McpTool(name = "timberborn-list-adapters", description = "List Adapters defined in timberborn world")
     fun listAdapters() = restClient
         .get()

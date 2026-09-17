@@ -1,17 +1,15 @@
 package eu.ziemniakoss.timberbornmcp.levers
 
 import eu.ziemniakoss.timberbornmcp.BoberApiService
-import org.slf4j.LoggerFactory
 import org.springframework.ai.mcp.annotation.McpTool
 import org.springframework.ai.mcp.annotation.McpToolParam
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.stereotype.Component
 import org.springframework.web.client.RestClient
 import org.springframework.web.client.requiredBody
-import java.util.logging.Logger
 
 @Component
-class LeverApi(val restClient: RestClient, val boberApiService: BoberApiService) {
+class LeverTools(val restClient: RestClient, val boberApiService: BoberApiService) {
 
     @McpTool(name = "timberborn-list-levers", description = "List all levers in timberborn ")
     fun listLevers() = restClient
