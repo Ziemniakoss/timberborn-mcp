@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: timberborn-mcp
+  ai:
+    mcp:
+      server:
+        enabled: true
+        stdio: true
+        version: 1.0.0
